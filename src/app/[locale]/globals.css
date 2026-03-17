@@ -1,0 +1,276 @@
+@import "tailwindcss";
+
+:root {
+  /* --background: #161828;
+  --foreground: #161828; */
+}
+
+@theme {
+  /* --font-zh: 'ZCOOL QingKe HuangYou', cursive; */
+  --breakpoint-xs: 30rem;
+  --font-en: 'Space Grotesk', Arial, Helvetica, sans-serif;
+  --font-zh: 'ZCOOL QingKe HuangYou';
+
+  --color-dark: #23232F;
+  --color-teal: #025067;
+  --color-turqoise: #0B9FBD;
+  --color-burgundy: #6C0E42;
+  --color-hot-pink: #B31B6F;
+
+  --color-dark-teal: #11485B;
+
+  --color-dark-green: #3E4B52;
+  --color-mid-green: #566E68;
+  --color-light-green: #8CAC91;
+  --color-purple: #745B87;
+
+  --color-dark-indigo: #0A1931;
+  --color-light-blue: #B3CFE5;
+  --color-blue: #4A7FA7;
+  --color-dark-blue: #1A3D63;
+  --color-white: #F6FAFD;
+
+  /* Suggested color scheme */
+  --color-slate-bg: #111318;
+  --color-slate-page: #161A22;
+  --color-slate-card: #1D2130;
+  --color-slate-border: #2A2F42;
+  --color-accent-primary: #7C3AED;
+  --color-accent-secondary: #A78BFA;
+  --color-heading: #E2DEFF;
+
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  /* --font-en: 'Space Grotesk', Arial, Helvetica, sans-serif; */
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background: #161828; */
+    /* --foreground: #161828; */
+    @apply text-indigo-200;
+    @apply bg-slate-page;
+  }
+}
+
+
+
+/* In your global CSS */
+@layer base {
+  .glass-gradient {
+    background: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(10px);
+  }
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-family), Arial, Helvetica, sans-serif;
+  /* font-family: 'Zen Maru Gothic', Arial, Helvetica, sans-serif; */
+  /* font-family: 'Space Grotesk', Arial, Helvetica, sans-serif; */
+}
+
+.main-theme {
+  @apply text-indigo-200;
+}
+
+.secondary {
+  @apply text-emerald-300;
+}
+
+/* Main Outer Container */
+.main-container {
+  @apply flex flex-col min-h-screen justify-center w-full lg:px-35 md:px-25 sm:px-15 px-5;
+}
+
+/* Not Implemented Colored Theme */
+.theme-border-color {}
+
+.theme-gradient-text {}
+
+.theme-bg-color {
+  @apply bg-[#161828];
+}
+
+
+/* Language */
+.en {
+  font-family: var(--font-en);
+}
+
+.zh {
+  font-family: var(--font-zh);
+}
+
+.site-links {
+  @apply text-[16px] text-accent-secondary hover:text-heading transition-colors duration-200;
+}
+
+/* Navigations */
+.navbar {
+  @apply lg:px-15 md:px-10 px-5;
+  @apply shadow-md top-0 z-50 fixed w-full;
+}
+
+.contact-form-fields {
+  @apply w-full px-4 py-3;
+  @apply bg-slate-card border border-slate-border rounded-lg;
+  @apply text-gray-200 placeholder:text-gray-500;
+  @apply focus:ring-2 focus:ring-accent-primary focus:border-transparent outline-none transition;
+}
+
+.page-container {
+  @apply flex flex-col items-center;
+  @apply w-full mx-auto;
+  @apply py-20 lg:px-20 md:px-10 sm:px-8 px-5;
+}
+
+.section-container {
+  @apply py-20 mx-auto w-full;
+}
+
+.page-content {
+  @apply flex flex-col;
+  @apply gap-5 pt-8;
+}
+
+.section-content-row {
+  @apply lg:px-10 md:px-25 sm:px-20 xs:px-20 px-5;
+  @apply flex lg:flex-row lg:gap-30 w-full mx-auto flex-col gap-10;
+}
+
+.section-content-col {
+  @apply lg:px-30 md:px-20 px-5;
+  @apply flex flex-col-reverse gap-5 items-center;
+}
+
+.section-title {
+  @apply text-accent-secondary font-semibold;
+  @apply w-full mx-auto mb-12 mt-5;
+  @apply lg:text-[36px] md:text-[36px] sm:text-[36px] text-[25px] text-center font-bold;
+  /* @apply bg-clip-text text-transparent bg-gradient-to-r from-turqoise via-turqoise to-hot-pink; */
+  /* @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-purple-500; */
+}
+
+.sub-section-bordered {
+  @apply bg-slate-card border border-slate-border rounded-xl p-4;
+  @apply text-accent-secondary text-sm font-medium;
+  @apply mx-auto lg:w-100 md:w-100 sm:w-100 w-full;
+  /* @apply flex flex-col gap-2 border rounded-2xl lg:p-6 p-4 border-white; */
+  @apply flex flex-col gap-2 rounded-2xl lg:p-6 p-4;
+}
+
+.sub-section-title {
+  @apply text-heading;
+  @apply w-full mx-auto;
+  @apply text-[20px] text-center mb-3 font-bold;
+}
+
+
+/* About Section */
+.about-basic-content {
+  @apply flex lg:flex-row flex-col gap-5 pt-5 w-full justify-between;
+}
+
+.about-column {
+  @apply flex flex-col lg:gap-3 gap-5 lg:w-100 w-full;
+}
+
+.about-field-container {
+  @apply flex lg:flex-row md:flex-row sm:flex-row xs:flex-row flex-col gap-2 justify-between w-full;
+}
+
+.about-field-tag-container {
+  @apply flex flex-col gap-2 justify-between w-full;
+}
+
+.about-field-label {
+  @apply lg:w-2/5 md:w-2/5 sm:w-2/5 xs:w-2/5 w-full;
+  @apply text-gray-500;
+}
+
+.about-field-value {
+  @apply lg:w-3/5 md:w-3/5 sm:w-3/5 xs:w-3/5 w-full;
+  @apply text-gray-200;
+}
+
+
+
+/* Experience */
+.experience-card {
+  @apply bg-slate-card border border-slate-border rounded-xl p-4 w-full;
+}
+
+.experience-job-title {
+  @apply text-heading font-semibold text-sm;
+}
+
+.ul-point-container {
+  @apply flex flex-col gap-1;
+}
+
+.ul-point-container li {
+  @apply text-gray-400 text-sm pl-3 relative;
+  /* padding-left: 1em; */
+  /* Space for the custom bullet */
+  /* position: relative;
+  margin-bottom: 4px;
+  font-size: 14px; */
+}
+
+.ul-point-container>li::before {
+  /* content: '›'; */
+  content: "\1F896";
+  @apply absolute left-0 text-accent-secondary;
+}
+
+
+/* Buttons */
+.btn-base {
+  @apply rounded-lg font-semibold transition duration-300 text-center;
+}
+
+.general-btn {
+  @apply px-6 py-3;
+}
+
+.label-icon {
+  @apply py-2;
+  @apply flex gap-2 items-center;
+}
+
+.btn-border {
+  @apply border-2;
+  @apply cursor-pointer disabled:cursor-not-allowed shadow-md hover:shadow-lg;
+  /* @apply border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300; */
+}
+
+.btn-disabled {
+  @apply cursor-none cursor-not-allowed;
+  @apply text-gray-600;
+}
+
+.default-border-btn-color {
+  @apply border-slate-border text-gray-200;
+  @apply hover:border-accent-secondary hover:text-accent-secondary;
+}
+
+.general-btn-color {}
+
+/* .gradient-btn {
+  @apply bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-blue-600 hover:to-purple-600;
+} */

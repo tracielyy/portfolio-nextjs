@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Python",
+        "type": "language",
+        "rating": 4
+    },
+    {
+        "name": "JavaScript",
+        "type": "language",
+        "rating": 5
+    },
+    {
+        "name": "Node.js",
+        "type": "framework",
+        "rating": 6
+    },
+    {
+        "name": "Next.js",
+        "type": "framework",
+        "rating": 2
+    },
+    {
+        "name": "Java",
+        "type": "language",
+        "rating": 3
+    },
+    {
+        "name": "HTML",
+        "type": "language",
+        "rating": 5
+    },
+    {
+        "name": "CSS",
+        "type": "language",
+        "rating": 4
+    },
+    {
+        "name": "Microsoft",
+        "type": "tool",
+        "rating": 5
+    },
+    {
+        "name": "Git",
+        "type": "tool",
+        "rating": 6
+    },
+    {
+        "name": "Teamwork",
+        "type": "soft",
+        "rating": 7
+    }
+]

@@ -1,0 +1,47 @@
+import { getDictionary } from '@/lib/dictionary';
+import { BadgesDisplay } from '@/components/ui/Badge';
+import { Experience } from '@/lib/models/Experience.class';
+import { PiArrowFatLinesUpBold } from "react-icons/pi";
+
+export default function ExperienceSection({ locale }) {
+    const experiences = Experience.getAllExperiences(locale);
+    const dict = getDictionary(locale);
+
+    return (
+        <section id="experience" className="section-container">
+            <h1 className="section-title">{dict.section.experience.title}</h1>
+            <div className='section-content-col'>
+
+                {
+                    experiences.map((experience) => (
+                        <div key={experience.id} className='container'>
+                            <div className='experience-card'>
+                                <span className="text-gray-500 text-sm">{experience.displayExperienceDuration()}</span>
+                                <span className='experience-job-title pt-2 pb-3 block'>
+                                    <b>{experience.jobTitle} @ <span className='text-accent-secondary'>{experience.organisation}</span>
+                                    </b>
+                                </span>
+
+                                {/* Descriptions */}
+                                <ul className='ul-point-container'>
+                                    {experience.descriptionPoints.map((point) => (
+                                        <li key={point}>{point}</li>
+                                    ))}
+                                </ul>
+
+                                {/* Tags */}
+                                <BadgesDisplay labelArray={experience.tags} />
+                            </div>
+                            {experience.id !== 0 && (
+                                <div className='flex flex-col items-center pt-3'>
+                                    <PiArrowFatLinesUpBold className='text-accent-secondary' />
+                                </div>
+                            )}
+                        </div>
+                    ))
+                }
+
+            </div>
+        </section>
+    )
+}

@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "course": "Diploma in Business Information System",
+        "institution": "Republic Polytechnic",
+        "education_level": "Diploma",
+        "start": {
+            "year": 2015,
+            "month": null,
+            "day": null
+        },
+        "end": {
+            "year": 2018,
+            "month": null,
+            "day": null
+        },
+        "description_points": [
+            "Knowledge on information system",
+            "Marketing theories and knowledge"
+        ],
+        "website": ""
+    },
+    {   
+        "id": 2,
+        "course": "Bachelor of Computer Science (Cyber Security)",
+        "institution": "University Of Wollongong",
+        "education_level": "Undergraduate",
+        "start": {
+            "year": 2019,
+            "month": null,
+            "day": null
+        },
+        "end": {
+            "year": 2021,
+            "month": null,
+            "day": null
+        },
+        "description_points": [
+            "Basic knowledge on cyber security",
+            "Basic object oriented programming knowledge",
+            "Software development"
+        ],
+        "website": ""
+    }
+]

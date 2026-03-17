@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "course": "商业信息系统文凭",
+        "institution": "共和理工学院",
+        "education_level": "文凭",
+        "start": {
+            "year": 2015,
+            "month": null,
+            "day": null
+        },
+        "end": {
+            "year": 2018,
+            "month": null,
+            "day": null
+        },
+        "description_points": [
+            "信息系统知识",
+            "营销理论与知识"
+        ],
+        "website": ""
+    },
+    {   
+        "id": 2,
+        "course": "计算机科学学士（网络安全）",
+        "institution": "伍伦贡大学",
+        "education_level": "本科",
+        "start": {
+            "year": 2019,
+            "month": null,
+            "day": null
+        },
+        "end": {
+            "year": 2021,
+            "month": null,
+            "day": null
+        },
+        "description_points": [
+            "网络安全基础知识",
+            "基本的面向对象编程知识",
+            "软件开发"
+        ],
+        "website": ""
+    }
+]

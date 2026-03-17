@@ -1,0 +1,63 @@
+[
+    {
+        "id": 0,
+        "job_title": "软件测试工程师",
+        "employment_type": "实习生",
+        "location": "新加坡",
+        "start": {
+            "year": 2017,
+            "month": 3,
+            "day": null
+        },
+        "end": {
+            "year": 2017,
+            "month": 7,
+            "day": null
+        },
+        "organisation": "Pactera Singapore Pte Ltd",
+        "summary": "",
+        "description_points": [
+            "在客户公司测试软件功能，例如账户创建和报告生成",
+            "编写测试用例步骤的文档",
+            "在 JIRA 中记录已发现的问题，并重新测试已修复的功能",
+            "频繁与开发人员沟通协作，以解决已发现的问题"
+        ],
+        "website": "https://en.pactera.com/",
+        "tags":[],
+        "is_current_role": false
+    },
+    {
+        "id": 1,
+        "job_title": "软件工程师",
+        "employment_type": "永久",
+        "location": "新加坡",
+        "start": {
+            "year": 2021,
+            "month": 10,
+            "day": null
+        },
+        "end": {
+            "year": null,
+            "month": null,
+            "day": null
+        },
+        "organisation": "Singapore Technologies Engineering Ltd",
+        "summary": "",
+        "description_points": [
+            "为仪表盘系统设计后端功能和 API 调用",
+            "主要工作是与 4-5 名软件工程师组成的团队，使用 Node.js、Feathers.js 和 Sequelize（ORM）实现 RESTful API",
+            "协助使用 React-Admin 进行前端开发",
+            "创建 Bash 脚本来启动 Couchbase Server 设置，用于后端模块测试",
+            "在军营中部署已开发的系统",
+            "主要客户是国防科技局 (DSTA) 和国防部 (MINDEF)"
+        ],
+        "website": "https://www.stengg.com/",
+        "tags": [
+            "JavaScript",
+            "Node.js",
+            "React",
+            "Grafana"
+        ],
+        "is_current_role": true
+    }
+]

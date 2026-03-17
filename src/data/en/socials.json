@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "icon": {
+            "component": "linkedin",
+            "library": "fa"
+        },
+        "platform_name": "LinkedIn",
+        "username": "tracielyy",
+        "url": "https://www.linkedin.com/in/tracielyy/"
+    },
+    {
+        "id": 2,
+        "icon": {
+            "component": "github",
+            "library": "fa"
+        },
+        "platform_name": "GitHub",
+        "username": "tracielyy",
+        "url": "https://github.com/tracielyy"
+    },
+    {
+        "id": 3,
+        "icon": {
+            "component": "gitlab",
+            "library": "fa"
+        },
+        "platform_name": "GitLab",
+        "username": "tracielyy",
+        "url": "https://gitlab.com/tracielyy"
+    }
+]

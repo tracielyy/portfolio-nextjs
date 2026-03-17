@@ -1,0 +1,161 @@
+{
+    "basic": {
+        "display_name": "Tracie",
+        "first_name": "",
+        "last_name": "",
+        "alias": "",
+        "occupation": "Software Engineer",
+        "location": "Singapore",
+        "interest": [
+            "Watching drama",
+            "Listening to music",
+            "Coding"
+        ],
+        "bio": "Aspiring Software Engineer",
+        "email": "tracielyy@outlook.sg",
+        "profiles": [
+            {
+                "platform_name": "linkedin",
+                "username": "tracielyy",
+                "url": "https://www.linkedin.com/in/tracielyy/"
+            },
+            {
+                "platform_name": "github",
+                "username": "tracielyy",
+                "url": "https://github.com/tracielyy"
+            },
+            {
+                "platform_name": "gitlab",
+                "username": "tracielyy",
+                "url": "https://gitlab.com/tracielyy"
+            }
+        ],
+        "username": "tracielyy",
+        "website": "https://www.tracielyy.com",
+        "picture": ""
+    },
+    "educations": [
+        {
+            "course": "Diploma in Business Information System",
+            "institution": "Republic Polytechnic",
+            "education_level": "Diploma",
+            "start":{
+                "year": 2015,
+                "month": null,
+                "day": null
+            },
+            "end":{
+                "year": 2018,
+                "month": null,
+                "day": null
+            },
+            "description_points": [
+                "Knowledge on information system",
+                "Marketing theories and knowledge"
+            ],
+            "website": ""
+        },
+        {
+            "course": "Bachelor of Computer Science (Cyber Security)",
+            "institution": "University Of Wollongong",
+            "education_level": "Undergraduate",
+            "start":{
+                "year": 2019,
+                "month": null,
+                "day": null
+            },
+            "end": {
+                "year": 2021,
+                "month": null,
+                "day": null
+            },
+            "description_points": [
+                "Basic knowledge on cyber security",
+                "Basic object oriented programming knowledge",
+                "Software development"
+            ],
+            "website": ""
+        }
+    ],
+    "work": [
+        {
+            "job_title": "Software Test Engineer",
+            "employment_type": "Intern",
+            "location": "Singapore",
+            "start": {
+                "year": 2017,
+                "month": 3,
+                "day": null
+            },
+            "end": {
+                "year": 2017,
+                "month": 7,
+                "day": null
+            },
+            "organisation": "Pactera Singapore Pte Ltd",
+            "summary": "",
+            "description_points": [
+                "Testing of software functions like account creation and report generation in our client company",
+                "Writing documentation for test case steps",
+                "Log identified issues in JIRA and retest fixed functions",
+                "Communicate and collaborate with developers on daily basis to fix identified issues"
+            ],
+            "website": "",
+            "is_current_role": false
+        },
+        {
+            "job_title": "Software Engineer",
+            "employment_type": "Permanent",
+            "location": "Singapore",
+            "start": {
+                "year": 2021,
+                "month": 10,
+                "day": null
+            },
+            "organisation": "Singapore Technologies Engineering Ltd",
+            "summary": "",
+            "description_points": [
+                "Design backend functions and API calls for dashboard system"
+            ],
+            "website": "",
+            "is_current_role": true
+        }
+    ],
+    "languages": [
+        {
+            "name": "English",
+            "spoken": 5,
+            "written": 5
+        },
+        {
+            "name": "Chinese",
+            "spoken": 6,
+            "written": 4
+        }
+    ],
+    "coding_skills": [
+        {
+            "name": "Python",
+            "rating": 2
+        },
+        {
+            "name": "Javascript/NodeJs",
+            "rating": 4
+        },
+        {
+            "name": "Java",
+            "rating": 3
+        },
+        {
+            "name": "HTML/CSS",
+            "rating": 4
+        }
+    ],
+    "projects": [],
+    "certificates": [],
+    "awards": [],
+    "url": "https://selfapi.tracielyy.com",
+    "version": "v1.0.0",
+    "last_modified": "",
+    "isCurrentSelected": true
+}

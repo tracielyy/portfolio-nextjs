@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "about": "关于",
+    "skills": "技术",
+    "experience": "经验",
+    "projects": "项目",
+    "contact": "联系"
+  },
+  "section": {
+    "hero": {
+      "welcome": "欢迎来到我的地下城！",
+      "greetings": "你好！我是$lastname$space$firstname",
+      "descriptions": "我是一名程序员。。。。",
+      "role": "软件工程师",
+      "contact": "聊天吧！",
+      "resume": "下载简历"
+    },
+    "about": {
+      "title": "关于",
+      "descriptions": "",
+      "basic": {
+        "title": "基本信息",
+        "content": {
+          "alias": "别名",
+          "email": "电邮",
+          "interest": "兴趣",
+          "location": "所在位置",
+          "name": "名字"
+        }
+      }
+    },
+    "skills": {
+      "title": "开发工具与专业技能",
+      "tools": {
+        "title": "开发工具"
+      },
+      "skills": {
+        "title": "专业技能"
+      }
+    },
+    "experience": {
+      "title": "经验"
+    },
+    "projects": {
+      "title": "项目"
+    },
+    "contact": {
+      "title": "联系",
+      "fields": {
+        "name": "姓名",
+        "email": "电邮",
+        "subject": "主题",
+        "message": "讯息内容"
+      },
+      "sendbutton": "发送消息"
+    }
+  },
+  "footer": {
+    "descriptions": "使用 Next.js 构建个人作品集网站",
+    "copyright": "\u00A9 林妍影 2025"
+  }
+}

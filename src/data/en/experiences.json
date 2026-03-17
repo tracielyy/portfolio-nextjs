@@ -1,0 +1,63 @@
+[
+    {
+        "id": 0,
+        "job_title": "Software Test Engineer",
+        "employment_type": "Intern",
+        "location": "Singapore",
+        "start": {
+            "year": 2017,
+            "month": 3,
+            "day": null
+        },
+        "end": {
+            "year": 2017,
+            "month": 7,
+            "day": null
+        },
+        "organisation": "Pactera Singapore Pte Ltd",
+        "summary": "",
+        "description_points": [
+            "Testing of software functions like account creation and report generation in our client company",
+            "Writing documentation for test case steps",
+            "Log identified issues in JIRA and retest fixed functions",
+            "Communicate and collaborate with developers on daily basis to fix identified issues"
+        ],
+        "website": "https://en.pactera.com/",
+        "tags": [],
+        "is_current_role": false
+    },
+    {
+        "id": 1,
+        "job_title": "Software Engineer",
+        "employment_type": "Permanent",
+        "location": "Singapore",
+        "start": {
+            "year": 2021,
+            "month": 10,
+            "day": null
+        },
+        "end": {
+            "year": null,
+            "month": null,
+            "day": null
+        },
+        "organisation": "Singapore Technologies Engineering Ltd",
+        "summary": "",
+        "description_points": [
+            "Design backend functions and API calls for dashboard system",
+            "Maily focused on implementing RESTFUL API using Node.js, Feathers.js with Sequelize (ORM) with a team of 4-5 software engineers",
+            "Occasionally, aiding in front-end development using React-Admin",
+            "Creating Bash scripts to spin up Couchbase Server setup for backend module testing",
+            "Deploying the developed system in army camps",
+            "The clients that we work with are primarily DSTA and MINDEF"
+        ],
+        "website": "https://www.stengg.com/",
+        "tags": [
+            "JavaScript",
+            "Node.js",
+            "React",
+            "Grafana"
+        ],
+        "is_current_role": true
+    }
+]

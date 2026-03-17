@@ -1,0 +1,15 @@
+[
+    {
+        "id": 0,
+        "slug": "personal-site",
+        "title": "Tracie Site",
+        "description": "Own Personal Site",
+        "tags": [
+            "Next.js",
+            "tailwindcss"
+        ],
+        "repo": "",
+        "image": "project-01.png",
+        "live": ""
+    }
+]

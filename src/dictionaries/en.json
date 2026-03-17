@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "section": {
+    "hero": {
+      "welcome": "Welcome to my dungeon!",
+      "greetings": "Hi! I'm $lastname$space$firstname",
+      "descriptions": "I am a developer.....",
+      "role": "Software Engineer",
+      "contact": "Let's Talk",
+      "resume": "Download Resume"
+    },
+    "about": {
+      "title": "About",
+      "descriptions": "I am a software engineer and I graduated from University of Wollongong in 2021",
+      "basic": {
+        "title": "Basic Details",
+        "content": {
+          "alias": "Alias",
+          "email": "Email",
+          "interest": "Interest",
+          "location": "Location",
+          "name": "Name"
+        }
+      }
+    },
+    "skills": {
+      "title": "Tools & Skills",
+      "tools": {
+        "title": "Tools"
+      },
+      "skills": {
+        "title": "Skills"
+      }
+    },
+    "experience": {
+      "title": "Experience"
+    },
+    "projects": {
+      "title": "Projects"
+    },
+    "contact": {
+      "title": "Get In Touch",
+      "fields": {
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message"
+      },
+      "sendbutton": "Send Message"
+    }
+  },
+  "footer": {
+    "descriptions": "Personal Portfolio Website Built With Next.js",
+    "copyright": "\u00A9 Ling Yan Ying 2025"
+  }
+}
