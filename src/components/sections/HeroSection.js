@@ -30,7 +30,7 @@ export default function HeroSection({ locale }) {
 
                     {/* Image Container - Center on mobile, left on desktop */}
                     <div className="flex-shrink-0">
-                        <div className="relative w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-white dark:border-gray-800 shadow-xl mx-auto lg:float-right">
+                        <div className="relative w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-gray-800 shadow-xl mx-auto lg:float-right">
                             {/* <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-white dark:border-gray-800 shadow-xl mx-auto lg:mx-0"> */}
                             <Image
                                 src="/images/personal/hero-personal-dp.jpg"

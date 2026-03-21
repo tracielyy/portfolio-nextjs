@@ -163,15 +163,12 @@ body {
   @apply text-accent-secondary font-semibold;
   @apply w-full mx-auto mb-12 mt-5;
   @apply lg:text-[36px] md:text-[36px] sm:text-[36px] text-[25px] text-center font-bold;
-  /* @apply bg-clip-text text-transparent bg-gradient-to-r from-turqoise via-turqoise to-hot-pink; */
-  /* @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-purple-500; */
 }
 
 .sub-section-bordered {
   @apply bg-slate-card border border-slate-border rounded-xl p-4;
   @apply text-accent-secondary text-sm font-medium;
   @apply mx-auto lg:w-100 md:w-100 sm:w-100 w-full;
-  /* @apply flex flex-col gap-2 border rounded-2xl lg:p-6 p-4 border-white; */
   @apply flex flex-col gap-2 rounded-2xl lg:p-6 p-4;
 }
 
@@ -210,7 +207,6 @@ body {
 }
 
 
-
 /* Experience */
 .experience-card {
   @apply bg-slate-card border border-slate-border rounded-xl p-4 w-full;
@@ -234,8 +230,8 @@ body {
 }
 
 .ul-point-container>li::before {
-  /* content: '›'; */
-  content: "\1F896";
+  content: '›';
+  /* content: "\1F896"; */
   @apply absolute left-0 text-accent-secondary;
 }
 
@@ -257,7 +253,6 @@ body {
 .btn-border {
   @apply border-2;
   @apply cursor-pointer disabled:cursor-not-allowed shadow-md hover:shadow-lg;
-  /* @apply border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300; */
 }
 
 .btn-disabled {
