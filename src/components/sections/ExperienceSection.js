@@ -15,10 +15,15 @@ export default function ExperienceSection({ locale }) {
                 {
                     experiences.map((experience) => (
                         <div key={experience.id} className='container'>
+                            
                             <div className='experience-card'>
                                 <span className="text-gray-500 text-sm">{experience.displayExperienceDuration()}</span>
                                 <span className='experience-job-title pt-2 pb-3 block'>
-                                    <b>{experience.jobTitle} @ <span className='text-accent-secondary'>{experience.organisation}</span>
+                                    <b>
+                                        {experience.jobTitle} @ &nbsp;
+                                        <span className='text-accent-secondary'>
+                                            {experience.organisation}
+                                        </span>
                                     </b>
                                 </span>
 

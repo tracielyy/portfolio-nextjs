@@ -53,7 +53,7 @@ export default function ContactSection({ locale }) {
   return (
     <section id="contact" className="section-container">
       <h1 className="section-title">{dict.section.contact.title}</h1>
-      <p className="text-gray-500 mb-8 text-center">Fill out the form below and I'll get back to you as soon as possible.</p>
+      <p className="text-gray-500 mb-8 text-center">{dict.section.contact.instructions}</p>
 
       {status.message && (
         <div className={`p-4 mb-6 rounded-lg 

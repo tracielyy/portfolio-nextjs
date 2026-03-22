@@ -50,7 +50,7 @@ export default function AboutSection({ locale }) {
 
                             {/* Interest */}
                             <div className='about-field-tag-container'>
-                                <span className='text-gray-400'>{dict.section.about.basic.content.interest}</span>
+                                <span className='about-field-label'>{dict.section.about.basic.content.interest}</span>
                                 <BadgesDisplay labelArray={basicData.interest} />
                             </div>
 
