@@ -5,7 +5,6 @@ import { TbDeviceDesktopCode } from "react-icons/tb";
 
 import { ProgressBarWithLabel } from '../ui/ProgressBar';
 
-
 export default function SkillsToolsSection({ locale }) {
     const dict = getDictionary(locale);
     const skillsToolsData = getData(locale, 'skills-and-tools');
@@ -23,7 +22,6 @@ export default function SkillsToolsSection({ locale }) {
                             <span>{dict.section.skills.tools.title}</span>
                         </span>
                     </h2>
-                    {/* TODO: List of tools */}
                     {
                         skillsToolsData
                             .filter((item) => (item.type === 'tool'))
@@ -52,7 +50,6 @@ export default function SkillsToolsSection({ locale }) {
                 </div>
 
             </div>
-
 
         </section>
 
