@@ -1,10 +1,17 @@
 import "./globals.css";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
-// import Header from "@/components/layout/Navbar";
 import { notFound } from 'next/navigation';
 
 const locales = ['en', 'zh'];
+
+import { Fira_Code } from 'next/font/google';
+
+const firaCode = Fira_Code({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-fira-code',
+});
 
 export const metadata = {
   title: "Tracie Portfolio Website",
@@ -28,7 +35,7 @@ export default async function RootLayout({ children, params }) {
 
   return (
     <html lang={locale} /* className="dark" */>
-      <body className={`${locale} main-theme`}>
+      <body className={`${locale} main-theme ${firaCode.variable}`}>
         <Header locale={locale} />
         {children}
         <Footer locale={locale} />

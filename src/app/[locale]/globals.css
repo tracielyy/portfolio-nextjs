@@ -46,6 +46,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-fira-code);
   /* --font-en: 'Space Grotesk', Arial, Helvetica, sans-serif; */
 }
 
@@ -151,7 +152,8 @@ body {
 
 .section-content-row {
   @apply lg:px-10 md:px-25 sm:px-20 xs:px-20 px-5;
-  @apply flex lg:flex-row lg:gap-30 w-full mx-auto flex-col gap-10;
+  @apply flex lg:flex-row lg:gap-10 w-full mx-auto flex-col gap-10;
+  /* @apply flex lg:flex-row lg:gap-30 w-full mx-auto flex-col gap-10; */
 }
 
 .section-content-col {
@@ -170,6 +172,7 @@ body {
   @apply text-accent-secondary text-sm font-medium;
   @apply mx-auto lg:w-100 md:w-100 sm:w-100 w-full;
   @apply flex flex-col gap-2 rounded-2xl lg:p-6 p-4;
+  @apply w-full lg:flex-1;
 }
 
 .sub-section-title {

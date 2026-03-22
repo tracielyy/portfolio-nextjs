@@ -1,7 +1,6 @@
 // components/HeroSimple.jsx
 'use client'
 import Image from 'next/image';
-import Link from 'next/link';
 import { getData } from '@/lib/data';
 import { getDictionary } from '@/lib/dictionary';
 import { usePathname } from 'next/navigation';
@@ -21,8 +20,6 @@ export default function HeroSection({ locale }) {
 
     return (
         <section className="section-container">
-            {/* Border Container */}
-            {/* <div className="relative p-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-3xl mx-auto"> */}
 
             {/* Inner Container */}
             <div className="p-2 sm:p-6 md:p-10 lg:p-8">
@@ -30,8 +27,10 @@ export default function HeroSection({ locale }) {
 
                     {/* Image Container - Center on mobile, left on desktop */}
                     <div className="flex-shrink-0">
-                        <div className="relative w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-gray-800 shadow-xl mx-auto lg:float-right">
-                            {/* <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-white dark:border-gray-800 shadow-xl mx-auto lg:mx-0"> */}
+                        <div
+                            className="relative w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80
+                                     rounded-full overflow-hidden border-8 border-gray-800 shadow-xl 
+                                     mx-auto lg:float-right">
                             <Image
                                 src="/images/personal/hero-personal-dp.jpg"
                                 alt="Your Name"
@@ -45,13 +44,14 @@ export default function HeroSection({ locale }) {
 
                     {/* Text Content */}
                     <div className="text-center lg:text-left lg:w-150">
+
                         {/* Welcome pill */}
                         <div className="inline-block bg-accent-primary/20 text-accent-secondary px-4 py-2 rounded-full text-sm font-semibold mb-4">
                             {dict.section.hero.welcome}
                         </div>
 
                         {/* Name gradient */}
-                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-wide">
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent-primary via-accent-secondary to-heading">
                                 {
                                     dict.section.hero.greetings
@@ -63,13 +63,13 @@ export default function HeroSection({ locale }) {
                         </h1>
 
                         {/* Role */}
-                        <h2 className="text-xl md:text-2xl text-gray-400 mb-6">
+                        <h2 className="text-xl md:text-2xl text-gray-400 mb-2 font-(family-name:--font-fira-code)">
                             {dict.section.hero.role}
                         </h2>
 
-                        {/* Description */}
-                        <p className="text-gray-500 text-lg mb-8 leading-relaxed">
-                            {dict.section.hero.descriptions}
+                        {/* Bio */}
+                        <p className="text-gray-500 mb-8 leading-relaxed font-(family-name:--font-fira-code)">
+                            {basicData.bio}
                         </p>
 
                         {/* Buttons */}
@@ -92,7 +92,6 @@ export default function HeroSection({ locale }) {
                         <div>
                             <Socials socialsData={socialsData} />
                         </div>
-
 
                     </div>
                 </div>
