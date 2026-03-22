@@ -17,7 +17,7 @@
     },
     "about": {
       "title": "关于",
-      "descriptions": "",
+      "descriptions": "我是一名软件工程师，由2021年本科毕业于伍伦贡大学计算机系。虽基础还欠佳，但本人对后端开发比较感兴趣。平时鲜少出门，大部分时间都是宅在家中。",
       "basic": {
         "title": "基本信息",
         "content": {
@@ -30,7 +30,7 @@
       }
     },
     "skills": {
-      "title": "开发工具与专业技能",
+      "title": "开发工具 与 专业技能",
       "tools": {
         "title": "开发工具"
       },
@@ -46,6 +46,7 @@
     },
     "contact": {
       "title": "联系",
+      "instructions": "请填写以下表格，本人会尽快回复",
       "fields": {
         "name": "姓名",
         "email": "电邮",
@@ -57,6 +58,6 @@
   },
   "footer": {
     "descriptions": "使用 Next.js 构建个人作品集网站",
-    "copyright": "\u00A9 林妍影 2025"
+    "copyright": "\u00A9 林妍影 2026"
   }
 }

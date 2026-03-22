@@ -17,7 +17,7 @@
     },
     "about": {
       "title": "About",
-      "descriptions": "I am a software engineer and I graduated from University of Wollongong in 2021",
+      "descriptions": "I am a software engineer, graduated from University of Wollongong from computer science in 2021. Although, I might not have enough skillset, but I am more interested in backend development.",
       "basic": {
         "title": "Basic Details",
         "content": {
@@ -46,6 +46,7 @@
     },
     "contact": {
       "title": "Get In Touch",
+      "instructions": "Fill out the form below and I'll get back to you as soon as possible.",
       "fields": {
         "name": "Name",
         "email": "Email",
@@ -57,6 +58,6 @@
   },
   "footer": {
     "descriptions": "Personal Portfolio Website Built With Next.js",
-    "copyright": "\u00A9 Ling Yan Ying 2025"
+    "copyright": "\u00A9 Ling Yan Ying 2026"
   }
 }
