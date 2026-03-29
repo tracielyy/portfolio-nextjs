@@ -1,7 +1,6 @@
 export class DateUtil {
 
     constructor({ year, month, day }) {
-        console.log("year", year);
         this.year = year;
         this.month = month;
         this.day = day;

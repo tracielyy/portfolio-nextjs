@@ -25,7 +25,6 @@ export class Experience {
      */
     constructor({ id, job_title, employment_type, location, start, end,
         organisation, summary, description_points, website, tags, is_current_role }) {
-        console.log("startyear", start.year);
         this.id = id;
         this.jobTitle = job_title;
         this.employmentType = employment_type;

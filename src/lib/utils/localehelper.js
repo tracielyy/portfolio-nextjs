@@ -1,5 +1,3 @@
-
-
 export class LocaleHelper {
     constructor(pathname) {
         this.pathname = pathname;
