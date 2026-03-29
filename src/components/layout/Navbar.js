@@ -3,32 +3,67 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import { getDictionary } from '@/lib/dictionary';
 import { LocaleHelper } from '@/lib/utils/localehelper';
 
 export default function Navbar({ locale }) {
+    const router = useRouter();
     const dict = getDictionary(locale);
     const pathname = usePathname();
     const localeHelper = new LocaleHelper(pathname);
     const [isOpen, setIsOpen] = useState(false);  // Menu
+
+    const localeToggleList = ['en', 'zh'];
+
+    const toggleLocale = () => {
+        const newLocale = localeToggleList.find(togLocale => togLocale !== locale); // There is only 2 locale
+        const newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
+        router.push(newPath);
+    };
 
     return (
         <nav className='navbar theme-bg-color'>
 
             <div className="flex justify-between items-center h-16 w-full">
 
-                {/* Logo */}
-                <Link href={localeHelper.localizedUrl('/')} className="inline-flex items-center gap-2">
-                    {/* Ling Yan Ying */}
-                    <Image
-                        src="/favicon/icon.svg"
-                        alt="Ling Yan Ying"
-                        width={40}
-                        height={40}
-                    />
-                    <span>Yan Ying</span>
-                </Link>
+                <div className="flex items-center gap-6">
+                    {/* Logo */}
+                    <Link href={localeHelper.localizedUrl('/')} className="inline-flex items-center gap-2">
+                        {/* Ling Yan Ying */}
+                        <Image
+                            src="/favicon/icon.svg"
+                            alt="Ling Yan Ying"
+                            width={40}
+                            height={40}
+                        />
+                        <span>Yan Ying</span>
+                    </Link>
+
+                    {/*  Toggle Language */}
+                    <div className="flex items-center bg-slate-card border border-slate-border rounded-full p-1 gap-1 w-fit">
+                        <button
+                            onClick={() => toggleLocale()}
+                            className={`px-3 py-1 rounded-full text-xs font-semibold transition-colors duration-200 cursor-pointer w-z
+            ${locale === 'en'
+                                    ? 'bg-accent-primary text-white'
+                                    : 'text-gray-400 hover:text-accent-secondary'
+                                }`}
+                        >
+                            EN
+                        </button>
+                        <button
+                            onClick={() => toggleLocale()}
+                            className={`px-3 py-1 rounded-full text-xs font-semibold transition-colors duration-200 cursor-pointer
+            ${locale === 'zh'
+                                    ? 'bg-accent-primary text-white'
+                                    : 'text-gray-400 hover:text-accent-secondary'
+                                }`}
+                        >
+                            ZH
+                        </button>
+                    </div>
+                </div>
 
                 {/* Desktop menu - hidden on mobile, flex on md+ */}
                 <div className="hidden lg:flex space-x-14 ">
@@ -68,15 +103,17 @@ export default function Navbar({ locale }) {
             </div>
 
             {/* Mobile Menu - dropdown */}
-            {isOpen && (
-                <div className="lg:hidden pb-4 flex flex-col items-center space-y-2">
-                    <Link href={localeHelper.localizedUrl('/#about')} onClick={() => setIsOpen(!isOpen)} className="block py-2 site-links">{dict.nav.about}</Link>
-                    <Link href={localeHelper.localizedUrl('/#skills')} onClick={() => setIsOpen(!isOpen)} className="block py-2 site-links">{dict.nav.skills}</Link>
-                    <Link href={localeHelper.localizedUrl('/#experience')} onClick={() => setIsOpen(!isOpen)} className="block py-2 site-links">{dict.nav.experience}</Link>
-                    <Link href={localeHelper.localizedUrl('/#projects')} onClick={() => setIsOpen(!isOpen)} className="block py-2 site-links">{dict.nav.projects}</Link>
-                    <Link href={localeHelper.localizedUrl('/#contact')} onClick={() => setIsOpen(!isOpen)} className="block py-2 site-links">{dict.nav.contact}</Link>
-                </div>
-            )}
-        </nav>
+            {
+                isOpen && (
+                    <div className="lg:hidden pb-4 flex flex-col items-center space-y-2">
+                        <Link href={localeHelper.localizedUrl('/#about')} onClick={() => setIsOpen(!isOpen)} className="block py-2 site-links">{dict.nav.about}</Link>
+                        <Link href={localeHelper.localizedUrl('/#skills')} onClick={() => setIsOpen(!isOpen)} className="block py-2 site-links">{dict.nav.skills}</Link>
+                        <Link href={localeHelper.localizedUrl('/#experience')} onClick={() => setIsOpen(!isOpen)} className="block py-2 site-links">{dict.nav.experience}</Link>
+                        <Link href={localeHelper.localizedUrl('/#projects')} onClick={() => setIsOpen(!isOpen)} className="block py-2 site-links">{dict.nav.projects}</Link>
+                        <Link href={localeHelper.localizedUrl('/#contact')} onClick={() => setIsOpen(!isOpen)} className="block py-2 site-links">{dict.nav.contact}</Link>
+                    </div>
+                )
+            }
+        </nav >
     )
 }
