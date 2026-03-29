@@ -11,7 +11,7 @@ export default function SkillsToolsSection({ locale }) {
 
     return (
         <section id="skills" className="section-container">
-            <h1 className="section-title">{dict.section.skills.title}</h1>
+            <h2 className="section-title">{dict.section.skills.title}</h2>
             <div className='section-content-row'>
 
                 {/* Tools Sub Section */}

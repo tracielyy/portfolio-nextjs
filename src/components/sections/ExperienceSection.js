@@ -9,7 +9,7 @@ export default function ExperienceSection({ locale }) {
 
     return (
         <section id="experience" className="section-container">
-            <h1 className="section-title">{dict.section.experience.title}</h1>
+            <h2 className="section-title">{dict.section.experience.title}</h2>
             <div className='section-content-col'>
 
                 {

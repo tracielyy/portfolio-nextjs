@@ -7,7 +7,7 @@ export default function AboutSection({ locale }) {
     const basicData = getData(locale, 'basic');
     return (
         <section id="about" className="section-container">
-            <h1 className="section-title">{dict.section.about.title}</h1>
+            <h2 className="section-title">{dict.section.about.title}</h2>
 
             {/* Container to wrap the content */}
             <div className='flex flex-col gap-8 flex-wrap w-full mx-auto lg:px-20 md:px-8'>

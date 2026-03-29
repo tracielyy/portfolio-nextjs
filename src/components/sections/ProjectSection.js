@@ -8,7 +8,7 @@ export default function ProjectSection({ locale }) {
 
   return (
     <section id="projects" className="section-container">
-      <h1 className="section-title">{dict.section.projects.title}</h1>
+      <h2 className="section-title">{dict.section.projects.title}</h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
