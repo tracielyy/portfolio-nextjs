@@ -1,9 +1,9 @@
 export default function sitemap() {
   return [
     {
-      url: "https://tracielyy.com",
+      url: "https://tracielyy.com/en",
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: "weekly",
       priority: 1,
     },
   ];
