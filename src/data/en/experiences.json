@@ -55,8 +55,11 @@
         "tags": [
             "JavaScript",
             "Node.js",
+            "FeathersJS",
             "React",
-            "Grafana"
+            "Grafana",
+            "Shell",
+            "Kubernetes"
         ],
         "is_current_role": true
     }
