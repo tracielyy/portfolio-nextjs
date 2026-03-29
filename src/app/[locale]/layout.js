@@ -15,7 +15,16 @@ const firaCode = Fira_Code({
 
 export const metadata = {
   title: "Tracie Portfolio Website",
-  description: "Software Engineer Portfolio Website",
+  description: "Ling Yan Ying's Software Engineer Portfolio Website",
+  keywords: ["Tracie Ling", "Ling Yan Ying", "Yan Ying", "Software Engineer", "林妍影", "软件工程师", "代码"],
+  authors: [{ name: "Tracie Ling Yan Ying" }],
+  openGraph: {
+    title: "Tracie Ling | 林妍影 | Software Engineer | 软件工程师",
+    description: "JavaScript & Next.js engineer. View my projects and experience.",
+    url: "https://tracielyy.com",
+    siteName: "Tracie Ling Portfolio",
+    type: "website",
+  },
   // icons:{
   //   icon:[
   //     { url: '/icon.png' }, // For general favicons
