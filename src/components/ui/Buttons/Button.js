@@ -27,13 +27,6 @@ export function DisabledButton({ label, icon, classNames, ...props }) {
     )
 }
 
-// export function GradientBgColorButton({ label, href, download = false, classNames}) {
-//     return (
-//         <BaseButton label={label} href={href} download={download}
-//          classNames={`gradient-btn ${classNames}`} />
-//     );
-// }
-
 export function BorderOnlyButton({ label, href, download = false, classNames, ...props }) {
     return (
         <BaseButton label={label} href={href} download={download}
@@ -41,7 +34,6 @@ export function BorderOnlyButton({ label, href, download = false, classNames, ..
     );
 }
 
-/* TODO: Add functionality for icon */
 export function ButtonWithIcon({ label, href, download = false, icon, classNames, ...props }) {
 
     return (

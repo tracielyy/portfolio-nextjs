@@ -1,4 +1,3 @@
-import Image from "next/image";
 import HeroSection from "@/components/sections/HeroSection";
 import ProjectSection from "@/components/sections/ProjectSection";
 import AboutSection from "@/components/sections/AboutSection";
@@ -11,7 +10,6 @@ export default async function Home({ params }) {
 
   return (
       <main className="main-container">
-        {/* TODO: Hero Section */}
         <HeroSection locale={locale} />
         <AboutSection locale={locale} />
         <SkillsToolsSection locale={locale} />

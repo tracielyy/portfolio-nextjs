@@ -1,12 +1,10 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import Link from 'next/link';
 import Navbar from './Navbar';
 
 export default function Header({ locale }) {
     const pathname = usePathname();
-    console.log("pppathnanme", pathname)
 
     // Toggle language, keep same page
     const otherLocale = locale === 'en' ? 'zh' : 'en';

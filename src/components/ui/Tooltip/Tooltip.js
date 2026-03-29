@@ -1,5 +1,3 @@
-
-
 export function Tooltip({ label }) {
     return (
         <div className='absolute bottom-full left-0 mb-2 px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10
