@@ -1,4 +1,3 @@
-// components/HeroSimple.jsx
 'use client'
 import Image from 'next/image';
 import { getData } from '@/lib/data';
@@ -28,9 +27,7 @@ export default function HeroSection({ locale }) {
                     {/* Image Container - Center on mobile, left on desktop */}
                     <div className="flex-shrink-0">
                         <div
-                            className="relative w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80
-                                     rounded-full overflow-hidden border-8 border-gray-800 shadow-xl 
-                                     mx-auto lg:float-right">
+                            className="relative w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-gray-800 shadow-xl mx-auto lg:float-right">
                             <Image
                                 src="/images/personal/hero-personal-dp.jpg"
                                 alt="Your Name"
