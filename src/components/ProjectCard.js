@@ -15,7 +15,7 @@ export default function ProjectCard({ locale, project }) {
         />
         <div className="p-4">
           <h3 className="text-heading text-lg font-semibold mb-1">{project.title}</h3>
-          <p className="text-gray-500 text-sm mb-3">{project.description}</p>
+          <p className="text-gray-500 text-sm mb-3 line-clamp-4">{project.description}</p>
           <BadgesDisplay labelArray={project.tags} />
         </div>
       </div>

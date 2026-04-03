@@ -41,8 +41,7 @@ export default function Socials({ socialsData, className }) {
         <div className="mt-4 pt-4 text-center">
             {/* Need to loop social data */}
             <ul className={`flex flex-row ${className} gap-4 md:gap-6 space-y-2`}> {/* Single line with responsive gap */}
-                {/* <ul className={`flex flex-row ${className} gap-4 md:gap-6 space-y-2 `}> Single line with responsive gap */}
-                {socialsData.map((social) => (
+                 {socialsData.map((social) => (
                     <li key={social.id}>
                         <a href={social.url} target="_blank" rel="noopener noreferrer"
                             className="iinline-block p-2 hover:scale-110 transition-transform duration-200 text-gray-400 hover:text-accent-secondary site-links">

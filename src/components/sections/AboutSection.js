@@ -1,10 +1,11 @@
-import { getData } from '@/lib/data';
 import { getDictionary } from '@/lib/dictionary';
 import { BadgesDisplay } from '@/components/ui/Badge';
+import { Basic } from '@/lib/models/Basic.class';
 
 export default function AboutSection({ locale }) {
     const dict = getDictionary(locale);
-    const basicData = getData(locale, 'basic');
+    const basicData = Basic.getBasic(locale);
+
     return (
         <section id="about" className="section-container">
             <h2 className="section-title">{dict.section.about.title}</h2>
@@ -24,7 +25,7 @@ export default function AboutSection({ locale }) {
                             {/* Name */}
                             <div className='about-field-container'>
                                 <span className='about-field-label'>{dict.section.about.basic.content.name}</span>
-                                <span className='about-field-value'>{basicData.first_name}</span>
+                                <span className='about-field-value'>{basicData.getFullName(locale)}</span>
                             </div>
 
                             {/* Alias */}
