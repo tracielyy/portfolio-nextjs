@@ -2,7 +2,7 @@
     {
         "name": "Python",
         "type": "language",
-        "rating": 4
+        "rating": 3
     },
     {
         "name": "JavaScript",
@@ -15,9 +15,19 @@
         "rating": 6
     },
     {
+        "name": "Express.js",
+        "type": "framework",
+        "rating": 4
+    },
+    {
+        "name": "Feathers.js",
+        "type": "framework",
+        "rating": 5
+    },
+    {
         "name": "Next.js",
         "type": "framework",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Java",
@@ -32,6 +42,16 @@
     {
         "name": "CSS",
         "type": "language",
+        "rating": 4
+    },
+    {
+        "name": "Kubernetes",
+        "type": "tool",
+        "rating": 3
+    },
+    {
+        "name": "Docker",
+        "type": "tool",
         "rating": 4
     },
     {

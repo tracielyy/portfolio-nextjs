@@ -2,14 +2,14 @@
     {
         "id": 0,
         "slug": "personal-site",
-        "title": "Tracie Site",
-        "description": "Own Personal Site",
+        "title": "Tracie Portfolio Site",
+        "description": "This is a personal portfolio website. The main purpose of this site is to showcase projects and experiences. This website is being hosted on Vercel.",
         "tags": [
             "Next.js",
             "tailwindcss"
         ],
-        "repo": "",
+        "repo": "https://github.com/tracielyy/portfolio-nextjs",
         "image": "project-01.png",
-        "live": ""
+        "live": "https://tracielyy.com/en"
     }
 ]

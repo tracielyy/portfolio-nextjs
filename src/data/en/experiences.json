@@ -23,7 +23,10 @@
             "Communicate and collaborate with developers on daily basis to fix identified issues"
         ],
         "website": "https://en.pactera.com/",
-        "tags": [],
+        "tags": [
+            "Testing",
+            "Jira"
+        ],
         "is_current_role": false
     },
     {

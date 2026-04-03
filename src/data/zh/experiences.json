@@ -23,7 +23,10 @@
             "频繁与开发人员沟通协作，以解决已发现的问题"
         ],
         "website": "https://en.pactera.com/",
-        "tags":[],
+        "tags": [
+            "Testing",
+            "Jira"
+        ],
         "is_current_role": false
     },
     {
@@ -55,8 +58,11 @@
         "tags": [
             "JavaScript",
             "Node.js",
+            "FeathersJS",
             "React",
-            "Grafana"
+            "Grafana",
+            "Shell",
+            "Kubernetes"
         ],
         "is_current_role": true
     }
