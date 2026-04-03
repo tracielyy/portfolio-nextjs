@@ -37,7 +37,7 @@ export class Project {
      * Find current project when given slug
      * @param locale {string}
      * @param slug {string}
-     * @returns {Project} project
+     * @returns {Project | undefined} project
      */
     static findBySlug(locale, slug) {
         const projects = this.getAllProjects(locale);

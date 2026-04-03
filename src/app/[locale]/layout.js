@@ -16,7 +16,9 @@ const firaCode = Fira_Code({
 export const metadata = {
   title: "Tracie Ling Yan Ying's Portfolio Website",
   description: "Ling Yan Ying's Software Engineer Portfolio Website",
-  keywords: ["Tracie Ling", "Ling Yan Ying", "Yan Ying", "Software Engineer", "林妍影", "软件工程师", "代码"],
+  keywords: ["Tracie Ling", "Ling Yan Ying",
+    "Yan Ying", "Software Engineer",
+    "Software Developer", "Backend Engineer", "林妍影", "软件工程师", "后端开发工程师", "后端工程师", "代码"],
   authors: [{ name: "Tracie Ling Yan Ying" }],
   alternates: {
     canonical: "https://tracielyy.com/en",
@@ -46,7 +48,7 @@ export default async function RootLayout({ children, params }) {
   }
 
   return (
-    <html lang={locale} /* className="dark" */>
+    <html lang={locale}>
       <body className={`${locale} main-theme ${firaCode.variable}`}>
         <Header locale={locale} />
         {children}

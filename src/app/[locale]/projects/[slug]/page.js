@@ -1,4 +1,3 @@
-import { getDictionary } from '@/lib/dictionary';
 import { notFound } from 'next/navigation';
 import { TbArrowBackUp } from "react-icons/tb";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
@@ -6,14 +5,19 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 import Image from 'next/image'
 import { BadgesDisplay } from '@/components/ui/Badge'
-import { ButtonWithIcon, BaseButton, DisabledButton } from '@/components/ui/Buttons/Button'
+import { BaseButton, DisabledButton } from '@/components/ui/Buttons/Button'
 import { LocaleHelper } from '@/lib/utils/localehelper';
 import { Project } from '@/lib/models/Project.class';
 
 export default async function ProjectPage({ params }) {
     const { locale, slug } = await params;
-    // const projects = Project.getAllProjectData(locale);
     const currentProject = Project.findBySlug(locale, slug);
+
+    // Handle missing projects
+    if (!currentProject) {
+        notFound(); // Shows 404 page
+    }
+
     const prevProject = Project.findPreviousById(locale, currentProject.id);
     const nextProject = Project.findNextById(locale, currentProject.id);
 
@@ -21,11 +25,6 @@ export default async function ProjectPage({ params }) {
     const disableNextBtn = currentProject.id === nextProject.id;
 
     const localeHelper = new LocaleHelper(`/${locale}`);
-
-    // Handle missing projects
-    if (!currentProject) {
-        notFound(); // Shows 404 page
-    }
 
     return (
         <section className="page-container">
@@ -43,7 +42,6 @@ export default async function ProjectPage({ params }) {
                     />
                 </div>
 
-
                 {/* Project Image */}
                 <Image
                     src={`/images/projects/${currentProject.image}`}
@@ -55,10 +53,8 @@ export default async function ProjectPage({ params }) {
 
                 {/* Project Content */}
                 <div className='w-full page-content'>
-                    {/* TODO: Add Descriptions */}
                     <p className="text-gray-400 text-sm leading-relaxed">{currentProject.description}</p>
                     {/* TODO: Add Link To Website */}
-                    {/* TODO: Add Tags */}
                     <BadgesDisplay labelArray={currentProject.tags} />
 
                 </div>
