@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { useRouter, usePathname } from 'next/navigation';
 import { getDictionary } from '@/lib/dictionary';
 import { LocaleHelper } from '@/lib/utils/localehelper';
+import Language from '@/lib/enums/Language.enum';
 
 export default function Navbar({ locale }) {
     const router = useRouter();
@@ -14,7 +15,7 @@ export default function Navbar({ locale }) {
     const localeHelper = new LocaleHelper(pathname);
     const [isOpen, setIsOpen] = useState(false);  // Menu
 
-    const localeToggleList = ['en', 'zh'];
+    const localeToggleList = Language.values().map(s => s.value);
 
     const toggleLocale = () => {
         const hash = window.location.hash;
@@ -46,22 +47,22 @@ export default function Navbar({ locale }) {
                         <button
                             onClick={() => toggleLocale()}
                             className={`px-3 py-1 rounded-full text-xs font-semibold transition-colors duration-200 cursor-pointer w-z
-            ${locale === 'en'
+            ${locale === Language.EN.toString()
                                     ? 'bg-accent-primary text-white'
                                     : 'text-gray-400 hover:text-accent-secondary'
                                 }`}
                         >
-                            EN
+                            {Language.EN.getLabel()}
                         </button>
                         <button
                             onClick={() => toggleLocale()}
                             className={`px-3 py-1 rounded-full text-xs font-semibold transition-colors duration-200 cursor-pointer
-            ${locale === 'zh'
+            ${locale === Language.ZH.toString()
                                     ? 'bg-accent-primary text-white'
                                     : 'text-gray-400 hover:text-accent-secondary'
                                 }`}
                         >
-                            ZH
+                            {Language.ZH.getLabel()}
                         </button>
                     </div>
                 </div>
