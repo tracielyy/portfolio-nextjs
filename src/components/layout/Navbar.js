@@ -17,9 +17,10 @@ export default function Navbar({ locale }) {
     const localeToggleList = ['en', 'zh'];
 
     const toggleLocale = () => {
+        const hash = window.location.hash;
         const newLocale = localeToggleList.find(togLocale => togLocale !== locale); // There is only 2 locale
         const newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
-        router.push(newPath);
+        router.push(`${newPath}${hash}`);
     };
 
     return (
