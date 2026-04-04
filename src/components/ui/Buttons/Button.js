@@ -1,28 +1,48 @@
 import Link from 'next/link';
 
-export function BaseButton({ label, href, download = false, external = false, icon, classNames, ...props }) {
+export function BaseButton({ label, href, download = false, external = false, tooltip, icon, iconPosition = 'left', classNames, ...props }) {
     const Component = external ? 'a' : Link;
     return (
         <Component
             href={href}
             download={download}
-            className={`btn-base ${classNames}`}
+            className={`btn-base relative group ${classNames}`}
             {...props}
         >
-            {icon && icon}
-            {label}
+            {iconPosition === 'right' ? (
+                <>
+                    {tooltip && tooltip}
+                    {label}
+                    {icon && icon}
+                </>
+            ) : (
+                <>
+                    {tooltip && tooltip}
+                    {icon && icon}
+                    {label}
+                </>
+            )}
         </Component>
     );
 }
 
-export function DisabledButton({ label, icon, classNames, ...props }) {
+export function DisabledButton({ label, icon, iconPosition = 'left', classNames, ...props }) {
     return (
         <span
             className={`btn-base btn-disabled ${classNames}`}
             {...props}
         >
-            {icon && icon}
-            {label}
+            {iconPosition === 'right' ? (
+                <>
+                    {label}
+                    {icon && icon}
+                </>
+            ) : (
+                <>
+                    {icon && icon}
+                    {label}
+                </>
+            )}
         </span>
     )
 }

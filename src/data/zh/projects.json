@@ -11,5 +11,18 @@
         "repo": "https://github.com/tracielyy/portfolio-nextjs",
         "image": "project-01.png",
         "live": "https://tracielyy.com/zh"
+    },
+    {
+        "id": 1,
+        "slug": "api-playground",
+        "title": "API 测试台",
+        "description": "即将推出",
+        "tags": [
+            "Next.js",
+            "Tailwind CSS"
+        ],
+        "repo": "",
+        "image": "",
+        "live": ""
     }
 ]
