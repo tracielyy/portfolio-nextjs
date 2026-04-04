@@ -6,7 +6,7 @@
         "description": "这是一个简单的个人页面。主要是用来展示个人作品以及经验。本网站部署在 Vercel 上。",
         "tags": [
             "Next.js",
-            "tailwindcss"
+            "Tailwind CSS"
         ],
         "repo": "https://github.com/tracielyy/portfolio-nextjs",
         "image": "project-01.png",

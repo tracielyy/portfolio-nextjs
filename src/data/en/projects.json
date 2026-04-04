@@ -6,7 +6,7 @@
         "description": "This is a personal portfolio website. The main purpose of this site is to showcase projects and experiences. This website is being hosted on Vercel.",
         "tags": [
             "Next.js",
-            "tailwindcss"
+            "Tailwind CSS"
         ],
         "repo": "https://github.com/tracielyy/portfolio-nextjs",
         "image": "project-01.png",
