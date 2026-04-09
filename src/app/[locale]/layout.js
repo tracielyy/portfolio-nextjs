@@ -30,13 +30,13 @@ export const metadata = {
     siteName: "Tracie Ling Portfolio",
     type: "website",
   },
-  // icons:{
-  //   icon:[
-  //     { url: '/icon.png' }, // For general favicons
-  //     { url: '/icon-32x32.png', sizes: '32x32', type: 'image/png' },
-  //   ],
-  //   apple:''
-  // }
+  icons:{
+    icon:[
+      { url: '/favicon/favicon.ico' }, // For general favicons
+      { url: '/favicon/favicon-192x192.png', sizes: '192x192', type: 'image/png' },
+    ],
+    apple:'/favicon/apple-touch-icon.png'
+  }
 };
 
 export default async function RootLayout({ children, params }) {
