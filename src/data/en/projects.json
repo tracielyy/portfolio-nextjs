@@ -16,13 +16,13 @@
         "id": 1,
         "slug": "api-playground",
         "title": "API Playground",
-        "description": "Coming Soon",
+        "description": "Access to the API playground for testing API requests is restricted to whitelisted users only. Administrators can add more users to the whitelist through the admin dashboard.",
         "tags": [
             "Next.js",
             "Tailwind CSS"
         ],
         "repo": "https://github.com/tracielyy/api-playground",
-        "image": "",
-        "live": ""
+        "image": "project-02.png",
+        "live": "https://apiplayground.tracielyy.com"
     }
 ]

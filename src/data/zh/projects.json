@@ -16,13 +16,13 @@
         "id": 1,
         "slug": "api-playground",
         "title": "API 测试台",
-        "description": "即将推出",
+        "description": "API 测试工具页面仅允许白名单用户使用，以便测试 API 请求。管理员可以通过管理后台将更多用户添加到白名单中。",
         "tags": [
             "Next.js",
             "Tailwind CSS"
         ],
         "repo": "https://github.com/tracielyy/api-playground",
-        "image": "",
-        "live": ""
+        "image": "project-02.png",
+        "live": "https://apiplayground.tracielyy.com"
     }
 ]
