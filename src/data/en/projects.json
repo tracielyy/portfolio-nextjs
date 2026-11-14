@@ -3,7 +3,7 @@
         "id": 0,
         "slug": "personal-site",
         "title": "Tracie Portfolio Site",
-        "description": "This is a personal portfolio website. The main purpose of this site is to showcase projects and experiences. This website is being hosted on Vercel.",
+        "description": "This is a personal portfolio website. The main purpose of this site is to showcase projects and experiences. This website is hosted on Vercel.",
         "tags": [
             "Next.js",
             "Tailwind CSS"

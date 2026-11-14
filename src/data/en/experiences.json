@@ -17,10 +17,10 @@
         "organisation": "Pactera Singapore Pte Ltd",
         "summary": "",
         "description_points": [
-            "Testing of software functions like account creation and report generation in our client company",
-            "Writing documentation for test case steps",
-            "Log identified issues in JIRA and retest fixed functions",
-            "Communicate and collaborate with developers on daily basis to fix identified issues"
+            "Tested software functions such as account creation and report generation for the client company",
+            "Wrote documentation for test case steps",
+            "Logged identified issues in Jira and retested fixed functions",
+            "Collaborated with developers daily to fix identified issues"
         ],
         "website": "https://en.pactera.com/",
         "tags": [
@@ -47,12 +47,12 @@
         "organisation": "Singapore Technologies Engineering Ltd",
         "summary": "",
         "description_points": [
-            "Design backend functions and API calls for dashboard system",
-            "Maily focused on implementing RESTFUL API using Node.js, Feathers.js with Sequelize (ORM) with a team of 4-5 software engineers",
-            "Occasionally, aiding in front-end development using React-Admin",
-            "Creating Bash scripts to spin up Couchbase Server setup for backend module testing",
-            "Deploying the developed system in army camps",
-            "The clients that we work with are primarily DSTA and MINDEF"
+            "Design backend functions and API calls for the dashboard system",
+            "Mainly implement RESTful APIs using Node.js and Feathers.js with Sequelize (ORM), within a team of 4–5 software engineers",
+            "Occasionally assist with front-end development using React-Admin",
+            "Create Bash scripts to spin up Couchbase Server setups for backend module testing",
+            "Deploy the developed system in army camps",
+            "Work primarily with clients DSTA and MINDEF"
         ],
         "website": "https://www.stengg.com/",
         "tags": [

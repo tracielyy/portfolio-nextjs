@@ -8,7 +8,7 @@ export default function Footer({ locale }) {
 
                 <div className="border-t border-gray-800 mt-8 pt-8 text-center">
                     <p className="text-gray-500 text-sm">{dict.footer.descriptions}</p>
-                    <p className="text-gray-600 text-sm">{dict.footer.copyright}</p>
+                    <p className="text-gray-600 text-sm">{dict.footer.copyright} {new Date().getFullYear()}</p>
                 </div>
 
             </div>

@@ -10,14 +10,14 @@
     "hero": {
       "welcome": "Welcome to my dungeon!",
       "greetings": "Hi! I'm $lastname$space$firstname",
-      "descriptions": "I am a developer.....",
+      "descriptions": "Backend-focused software engineer building APIs and dashboards with Node.js, Feathers.js and Kubernetes.",
       "role": "Software Engineer",
       "contact": "Let's Talk",
       "resume": "Download Resume"
     },
     "about": {
       "title": "About",
-      "descriptions": "I am Ling Yan Ying, a software engineer whom graduated from University of Wollongong from computer science in 2021. I am more interested in backend development and will dive further into it.",
+      "descriptions": "I am Ling Yan Ying, a software engineer who graduated from the University of Wollongong with a degree in computer science in 2021. I am most interested in backend development and plan to dive deeper into it.",
       "basic": {
         "title": "Basic Details",
         "content": {
@@ -57,7 +57,7 @@
     }
   },
   "footer": {
-    "descriptions": "Personal Portfolio Website Built With Next.js",
-    "copyright": "\u00A9 Ling Yan Ying 2026"
+    "descriptions": "Personal Portfolio Website Built with Next.js",
+    "copyright": "\u00A9 Ling Yan Ying"
   }
 }

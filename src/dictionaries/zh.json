@@ -1,8 +1,8 @@
 {
   "nav": {
     "about": "关于",
-    "skills": "技术",
-    "experience": "经验",
+    "skills": "技能",
+    "experience": "工作经历",
     "projects": "项目",
     "contact": "联系"
   },
@@ -10,27 +10,27 @@
     "hero": {
       "welcome": "欢迎来到我的地下城！",
       "greetings": "你好！我是$lastname$space$firstname",
-      "descriptions": "我是一名程序员。。。。",
+      "descriptions": "我是一名程序员……",
       "role": "软件工程师",
-      "contact": "聊天吧！",
+      "contact": "联系我",
       "resume": "下载简历"
     },
     "about": {
       "title": "关于",
-      "descriptions": "你好！我叫林妍影，是一名软件工程师，由2021年本科毕业于伍伦贡大学计算机系。本人对后端开发比较感兴趣，后续会继续钻研。平时鲜少出门，大部分时间都是宅在家中。",
+      "descriptions": "你好！我叫林岩颖，是一名软件工程师，于2021年毕业于伍伦贡大学计算机科学专业（本科）。我对后端开发比较感兴趣，后续会继续钻研。平时鲜少出门，大部分时间都是宅在家中。",
       "basic": {
         "title": "基本信息",
         "content": {
           "alias": "别名",
           "email": "电邮",
           "interest": "兴趣",
-          "location": "所在位置",
-          "name": "名字"
+          "location": "所在地",
+          "name": "姓名"
         }
       }
     },
     "skills": {
-      "title": "开发工具 与 专业技能",
+      "title": "技能",
       "tools": {
         "title": "开发工具"
       },
@@ -39,25 +39,25 @@
       }
     },
     "experience": {
-      "title": "经验"
+      "title": "工作经历"
     },
     "projects": {
       "title": "项目"
     },
     "contact": {
-      "title": "联系",
-      "instructions": "请填写以下表格，本人会尽快回复",
+      "title": "联系我",
+      "instructions": "请填写以下表格，我会尽快回复。",
       "fields": {
         "name": "姓名",
         "email": "电邮",
         "subject": "主题",
-        "message": "讯息内容"
+        "message": "留言内容"
       },
-      "sendbutton": "发送消息"
+      "sendbutton": "发送留言"
     }
   },
   "footer": {
     "descriptions": "使用 Next.js 构建个人作品集网站",
-    "copyright": "\u00A9 林妍影 2026"
+    "copyright": "\u00A9 林岩颖"
   }
 }

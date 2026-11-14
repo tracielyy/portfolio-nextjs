@@ -25,9 +25,24 @@
         "rating": 5
     },
     {
+        "name": "Sequelize",
+        "type": "framework",
+        "rating": 5
+    },
+    {
         "name": "Next.js",
         "type": "framework",
         "rating": 3
+    },
+    {
+        "name": "React",
+        "type": "framework",
+        "rating": 4
+    },
+    {
+        "name": "React-Admin",
+        "type": "framework",
+        "rating": 4
     },
     {
         "name": "Java",
@@ -45,6 +60,11 @@
         "rating": 4
     },
     {
+        "name": "MySQL",
+        "type": "database",
+        "rating": 4
+    },
+    {
         "name": "Kubernetes",
         "type": "tool",
         "rating": 3
@@ -55,7 +75,17 @@
         "rating": 4
     },
     {
-        "name": "Microsoft",
+        "name": "Excel",
+        "type": "tool",
+        "rating": 5
+    },
+    {
+        "name": "Word",
+        "type": "tool",
+        "rating": 5
+    },
+    {
+        "name": "PowerPoint",
         "type": "tool",
         "rating": 5
     },

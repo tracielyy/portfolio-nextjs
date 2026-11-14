@@ -15,7 +15,7 @@
             "day": null
         },
         "description_points": [
-            "Knowledge on information system",
+            "Knowledge of information systems",
             "Marketing theories and knowledge"
         ],
         "website": "https://www.rp.edu.sg/"
@@ -23,7 +23,7 @@
     {   
         "id": 2,
         "course": "Bachelor of Computer Science (Cyber Security)",
-        "institution": "University Of Wollongong",
+        "institution": "University of Wollongong",
         "education_level": "Undergraduate",
         "start": {
             "year": 2019,
@@ -36,8 +36,8 @@
             "day": null
         },
         "description_points": [
-            "Basic knowledge on cyber security",
-            "Basic object oriented programming knowledge",
+            "Basic knowledge of cyber security",
+            "Basic object-oriented programming knowledge",
             "Software development"
         ],
         "website": "https://www.uow.edu.au/"
