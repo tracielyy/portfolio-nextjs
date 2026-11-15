@@ -81,6 +81,13 @@ public/                          # favicon/, images/ (icons, personal, projects)
 - `README.md` is still the default create-next-app text.
 - `api/contact/route.js` interpolates user input into HTML unescaped and has `debug`/`logger` enabled; consider sanitizing and disabling in production.
 
+## Constraints (Approval Required)
+
+- **No action without approval.** Claude must not perform any action (editing or creating files, running commands, installing packages, committing, pushing, etc.) until the user has explicitly approved it. Propose the action first, then wait.
+- **Never delete files without approval.** This includes `rm`, `git rm`, `git clean`, overwriting a file with empty content, and removing directories.
+- **Deletions need double confirmation.** Before any deletion, list exactly what will be deleted and ask for approval, then ask a second, separate confirmation after the first is given. Proceed only once both are explicit "yes" answers.
+- Approval for one action does not carry over to other actions. Ask again each time.
+
 ## Additional Requirements
 
 <!-- Add your own rules below -->
